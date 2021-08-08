@@ -32,3 +32,15 @@ int calculate::complexImagSum(complex o1, complex o2){
 }
 
 int main()
+{
+  complex c1, c2, csum;
+  c1.setdata(2,5);
+  c2.setdata(7,9);
+  c1.displaydata();
+  c2.displaydata();
+
+  calculate calc;
+  cout<<".......\n\n";
+  csum.setdata(calc.complexRealSum(c1 , c2) , calc.complexImagSum(c1, c2));
+  csum.displaydata();
+}
